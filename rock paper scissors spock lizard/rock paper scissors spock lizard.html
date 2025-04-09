@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra Papel Tijera Lagarto Spock</title>
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+
+  <div class="container">
+
+  <h1>Piedra, Papel, Tijera, Lagarto, Spock</h1>
+  <div>
+    <button onclick="jugar('piedra')">🪨 Piedra</button>
+    <button onclick="jugar('papel')">📄 Papel</button>
+    <button onclick="jugar('tijera')">✂️ Tijera</button>
+    <button onclick="jugar('lagarto')">🦎 Lagarto</button>
+    <button onclick="jugar('spock')">🖖 Spock</button>
+  </div>
+
+  <div id="resultado"></div>
+
+  <table>
+    <tr><th>Victorias</th><th>Derrotas</th><th>Empates</th></tr>
+    <tr>
+      <td id="victorias">0</td>
+      <td id="derrotas">0</td>
+      <td id="empates">0</td>
+    </tr>
+  </table>
+
+  <button id="reset" onclick="reiniciarContador()">🔄 Reiniciar</button>
+
+  <!-- Sonidos -->
+  <audio id="sound-win" src="https://www.soundjay.com/human/sounds/applause-8.mp3"></audio>
+  <audio id="sound-lose" src="https://www.soundjay.com/button/sounds/button-10.mp3"></audio>
+  <audio id="sound-draw" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
+
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
